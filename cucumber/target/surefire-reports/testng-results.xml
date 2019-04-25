@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Failed suite [Failed suite [Default suite]]" duration-ms="21697" started-at="2019-04-04T17:55:42Z" finished-at="2019-04-04T17:56:04Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrun.TestRun@6ccac6f4]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="my first test" duration-ms="21697" started-at="2019-04-04T17:55:42Z" finished-at="2019-04-04T17:56:04Z">
+      <class name="testrun.TestRun">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrun.TestRun@6ccac6f4]" name="setUpClass" is-config="true" duration-ms="153" started-at="2019-04-04T13:55:42Z" finished-at="2019-04-04T13:55:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testrun.TestRun@6ccac6f4]" name="setup" is-config="true" duration-ms="1" started-at="2019-04-04T13:55:43Z" finished-at="2019-04-04T13:55:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrun.TestRun@6ccac6f4]" name="feature" duration-ms="607" started-at="2019-04-04T13:55:43Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-04-04T13:55:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[my scenario]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testrun.TestRun@6ccac6f4]" name="teardown" is-config="true" duration-ms="15" started-at="2019-04-04T13:55:43Z" finished-at="2019-04-04T13:55:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrun.TestRun@6ccac6f4]" name="tearDownClass" is-config="true" duration-ms="250" started-at="2019-04-04T13:55:43Z" finished-at="2019-04-04T13:55:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrun.TestRun -->
+      <class name="seleniumtest.mytest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumtest.mytest@438c9aa7]" name="setUp" is-config="true" duration-ms="6051" started-at="2019-04-04T13:55:44Z" finished-at="2019-04-04T13:55:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUntitledTestCase()[pri:0, instance:seleniumtest.mytest@438c9aa7]" name="testUntitledTestCase" duration-ms="14213" started-at="2019-04-04T13:55:50Z" finished-at="2019-04-04T13:56:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitledTestCase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleniumtest.mytest@438c9aa7]" name="tearDown" is-config="true" duration-ms="254" started-at="2019-04-04T13:56:04Z" finished-at="2019-04-04T13:56:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumtest.mytest -->
+    </test> <!-- my first test -->
+  </suite> <!-- Failed suite [Failed suite [Default suite]] -->
+</testng-results>

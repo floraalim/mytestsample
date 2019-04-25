@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generator="Robot 3.1.1 (Jython 2.7.0 on java1.8.0_191)" generated="20190404 13:59:28.246">
+<suite source="/Users/alim/eclipse-workspace/cucumber/src/test/robotframework/acceptance" name="Acceptance" id="s1">
+<suite source="/Users/alim/eclipse-workspace/cucumber/src/test/robotframework/acceptance/libtest.robot" name="Libtest" id="s1-s1">
+<test name="java Test" id="s1-s1-t1">
+<kw library="robotclass.Robottest" name="Openbaidu">
+<msg level="INFO" timestamp="20190404 13:59:34.382">百度一下，你就知道</msg>
+<status endtime="20190404 13:59:34.387" starttime="20190404 13:59:30.915" status="PASS"></status>
+</kw>
+<kw library="robotclass.Robottest" name="Openamazon">
+<msg level="INFO" timestamp="20190404 13:59:36.626">Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs &amp; more</msg>
+<status endtime="20190404 13:59:36.627" starttime="20190404 13:59:34.393" status="PASS"></status>
+</kw>
+<kw library="robotclass.Robottest" name="Closedriver">
+<status endtime="20190404 13:59:36.759" starttime="20190404 13:59:36.629" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20190404 13:59:36.761" starttime="20190404 13:59:30.905" status="PASS"></status>
+</test>
+<status endtime="20190404 13:59:36.769" starttime="20190404 13:59:28.543" status="PASS"></status>
+</suite>
+<suite source="/Users/alim/eclipse-workspace/cucumber/src/test/robotframework/acceptance/mytest.robot" name="Mytest" id="s1-s2">
+<test name="test1" id="s1-s2-t1">
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>my name is ${myname}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 13:59:36.869">my name is mamat</msg>
+<status endtime="20190404 13:59:36.870" starttime="20190404 13:59:36.855" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Open Browser">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.google.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 13:59:36.910">browserName: chrome</msg>
+<msg level="INFO" timestamp="20190404 13:59:36.921">Opening browser 'chrome'</msg>
+<msg level="INFO" timestamp="20190404 13:59:39.221">Starting ChromeDriver 73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72) on port 13003
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.</msg>
+<status endtime="20190404 13:59:39.223" starttime="20190404 13:59:36.871" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<status endtime="20190404 13:59:39.363" starttime="20190404 13:59:39.224" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Set Browser Implicit Wait">
+<doc>Sets and returns the implicit wait time in seconds that is used by the current Selenium 2 WebDriver instance.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<status endtime="20190404 13:59:39.388" starttime="20190404 13:59:39.365" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Input Text">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>monpower</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 13:59:39.394">Typing text 'monpower' into text field 'name=q'</msg>
+<msg level="WARN" timestamp="20190404 13:59:39.564">'=' is deprecated as locator strategy separator. ':' should be used instead</msg>
+<status endtime="20190404 13:59:39.566" starttime="20190404 13:59:39.390" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Click Button">
+<doc>Click on the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="tsf"]/div[2]/div/div[3]/center/input[1]</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 13:59:39.572">Clicking button 'xpath=//*[@id="tsf"]/div[2]/div/div[3]/center/input[1]'.</msg>
+<msg level="WARN" timestamp="20190404 13:59:42.211">'=' is deprecated as locator strategy separator. ':' should be used instead</msg>
+<status endtime="20190404 13:59:42.213" starttime="20190404 13:59:39.568" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Sleep">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 13:59:44.220">Slept 2 seconds</msg>
+<status endtime="20190404 13:59:44.221" starttime="20190404 13:59:42.215" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Click Element">
+<doc>Click on the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=LC20lb</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 13:59:44.225">Clicking element 'class=LC20lb'.</msg>
+<kw library="SeleniumLibrary" name="Capture Page Screenshot">
+<doc>Take a screenshot of the current page and embed it into the log.</doc>
+<msg level="INFO" html="yes" timestamp="20190404 13:59:48.878">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status endtime="20190404 13:59:48.880" starttime="20190404 13:59:48.290" status="PASS"></status>
+</kw>
+<msg level="WARN" timestamp="20190404 13:59:48.881">'=' is deprecated as locator strategy separator. ':' should be used instead</msg>
+<msg level="FAIL" timestamp="20190404 13:59:48.898">Element locator 'class=LC20lb' did not match any elements.</msg>
+<status endtime="20190404 13:59:48.899" starttime="20190404 13:59:44.222" status="FAIL"></status>
+</kw>
+<status critical="yes" endtime="20190404 13:59:48.901" starttime="20190404 13:59:36.844" status="FAIL">Element locator 'class=LC20lb' did not match any elements.</status>
+</test>
+<test name="test2: register with invalid user" id="s1-s2-t2">
+<kw name="login with invalid user">
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>visit monpower and begin to login</arg>
+</arguments>
+<status endtime="20190404 13:59:48.914" starttime="20190404 13:59:48.909" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Close Browser">
+<doc>Closes the current browser instance.</doc>
+<status endtime="20190404 13:59:49.048" starttime="20190404 13:59:48.915" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Open Browser">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.firstenergycorp.com/content/customer/mon_power.html</arg>
+<arg>chrome</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 13:59:49.057">browserName: chrome</msg>
+<msg level="INFO" timestamp="20190404 13:59:49.063">Opening browser 'chrome'</msg>
+<msg level="INFO" timestamp="20190404 13:59:54.857">Starting ChromeDriver 73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72) on port 37762
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.</msg>
+<status endtime="20190404 13:59:54.858" starttime="20190404 13:59:49.049" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Input Text">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=loginUsername</arg>
+<arg>alimablat</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 13:59:54.863">Typing text 'alimablat' into text field 'id=loginUsername'</msg>
+<msg level="WARN" timestamp="20190404 13:59:55.016">'=' is deprecated as locator strategy separator. ':' should be used instead</msg>
+<status endtime="20190404 13:59:55.018" starttime="20190404 13:59:54.859" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Input Text">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=loginPwd</arg>
+<arg>paz8187527</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 13:59:55.023">Typing text 'paz8187527' into text field 'id=loginPwd'</msg>
+<msg level="WARN" timestamp="20190404 13:59:55.126">'=' is deprecated as locator strategy separator. ':' should be used instead</msg>
+<status endtime="20190404 13:59:55.128" starttime="20190404 13:59:55.020" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Click Button">
+<doc>Click on the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="form"]/div/button</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 13:59:55.141">Clicking button 'xpath=//*[@id="form"]/div/button'.</msg>
+<msg level="WARN" timestamp="20190404 13:59:57.912">'=' is deprecated as locator strategy separator. ':' should be used instead</msg>
+<msg level="WARN" timestamp="20190404 13:59:57.913">'=' is deprecated as locator strategy separator. ':' should be used instead</msg>
+<status endtime="20190404 13:59:57.918" starttime="20190404 13:59:55.129" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Sleep">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 13:59:59.922">Slept 2 seconds</msg>
+<status endtime="20190404 13:59:59.924" starttime="20190404 13:59:57.919" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Element Should Be Visible">
+<doc>Verify the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="main-content-wrap"]/section/article/div/div[2]/div[1]/div[2]/div/div/div/div/h1</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 13:59:59.928">Verifying element 'xpath=//*[@id="main-content-wrap"]/section/article/div/div[2]/div[1]/div[2]/div/div/div/div/h1' is visible.</msg>
+<msg level="WARN" timestamp="20190404 13:59:59.961">'=' is deprecated as locator strategy separator. ':' should be used instead</msg>
+<status endtime="20190404 13:59:59.963" starttime="20190404 13:59:59.925" status="PASS"></status>
+</kw>
+<status endtime="20190404 13:59:59.965" starttime="20190404 13:59:48.907" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Close Browser">
+<doc>Closes the current browser instance.</doc>
+<status endtime="20190404 14:00:00.097" starttime="20190404 13:59:59.966" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20190404 14:00:00.098" starttime="20190404 13:59:48.902" status="PASS"></status>
+</test>
+<status endtime="20190404 14:00:00.105" starttime="20190404 13:59:36.784" status="FAIL"></status>
+</suite>
+<suite source="/Users/alim/eclipse-workspace/cucumber/src/test/robotframework/acceptance/restful.robot" name="Restful" id="s1-s3">
+<test name="Get Requests" id="s1-s3-t1">
+<kw library="HttpRequestLibrary" name="Create Session">
+<doc>Create a HTTP session to a server</doc>
+<arguments>
+<arg>google</arg>
+<arg>http://www.google.com</arg>
+</arguments>
+<status endtime="20190404 14:00:00.793" starttime="20190404 14:00:00.178" status="PASS"></status>
+</kw>
+<kw library="HttpRequestLibrary" name="Create Session">
+<doc>Create a HTTP session to a server</doc>
+<arguments>
+<arg>httpbin</arg>
+<arg>http://httpbin.org</arg>
+</arguments>
+<status endtime="20190404 14:00:00.805" starttime="20190404 14:00:00.795" status="PASS"></status>
+</kw>
+<kw library="HttpRequestLibrary" name="Get Request">
+<doc> Send a GET request on the session object found using the</doc>
+<arguments>
+<arg>google</arg>
+<arg>/</arg>
+</arguments>
+<assign>
+<var>${resp}</var>
+</assign>
+<msg level="INFO" timestamp="20190404 14:00:01.071">${resp} = {"status_code":200,"text":"\u003c!doctype html\u003e\u003chtml itemscope\u003d\"\" itemtype\u003d\"http://schema.org/WebPage\" lang\u003d\"en\"\u003e\u003chead\u003e\u003cmeta content\u003d\"Search th...</msg>
+<status endtime="20190404 14:00:01.071" starttime="20190404 14:00:00.806" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${resp.status_code}</arg>
+</arguments>
+<status endtime="20190404 14:00:01.076" starttime="20190404 14:00:01.072" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${resp.status_code}</arg>
+<arg>200</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.082">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status endtime="20190404 14:00:01.083" starttime="20190404 14:00:01.077" status="PASS"></status>
+</kw>
+<kw library="HttpRequestLibrary" name="Get Request">
+<doc> Send a GET request on the session object found using the</doc>
+<arguments>
+<arg>httpbin</arg>
+<arg>/</arg>
+</arguments>
+<assign>
+<var>${resp}</var>
+</assign>
+<msg level="INFO" timestamp="20190404 14:00:01.188">${resp} = {"status_code":200,"text":"\u003c!DOCTYPE html\u003e\n\u003chtml lang\u003d\"en\"\u003e\n\n\u003chead\u003e\n    \u003cmeta charset\u003d\"UTF-8\"\u003e\n    \u003ctitle\u003ehttpbin.org\u003c/title\u...</msg>
+<status endtime="20190404 14:00:01.189" starttime="20190404 14:00:01.088" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${resp.status_code}</arg>
+<arg>400</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.205">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<msg level="FAIL" timestamp="20190404 14:00:01.207">200 != 400</msg>
+<status endtime="20190404 14:00:01.208" starttime="20190404 14:00:01.195" status="FAIL"></status>
+</kw>
+<status critical="yes" endtime="20190404 14:00:01.209" starttime="20190404 14:00:00.176" status="FAIL">200 != 400</status>
+</test>
+<status endtime="20190404 14:00:01.213" starttime="20190404 14:00:00.116" status="FAIL"></status>
+</suite>
+<suite source="/Users/alim/eclipse-workspace/cucumber/src/test/robotframework/acceptance/test.robot" name="Test" id="s1-s4">
+<test name="Scenario: eating cucumbers" id="s1-s4-t1">
+<kw name="Scenario Outline: eating cucumbers">
+<arguments>
+<arg>12</arg>
+<arg>5</arg>
+<arg>7</arg>
+</arguments>
+<kw name="Given there are ${start} cucumbers">
+<kw library="BuiltIn" name="Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${start}</arg>
+<arg>${x}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.287">${start} = 12</msg>
+<status endtime="20190404 14:00:01.287" starttime="20190404 14:00:01.279" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${start}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.291">12</msg>
+<status endtime="20190404 14:00:01.293" starttime="20190404 14:00:01.288" status="PASS"></status>
+</kw>
+<status endtime="20190404 14:00:01.295" starttime="20190404 14:00:01.272" status="PASS"></status>
+</kw>
+<kw name="When I eat ${eat} cucumbers">
+<kw library="BuiltIn" name="Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${eat}</arg>
+<arg>${y}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.305">${eat} = 5</msg>
+<status endtime="20190404 14:00:01.306" starttime="20190404 14:00:01.299" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${start}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.309">12</msg>
+<status endtime="20190404 14:00:01.310" starttime="20190404 14:00:01.307" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${eat}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.313">5</msg>
+<status endtime="20190404 14:00:01.314" starttime="20190404 14:00:01.311" status="PASS"></status>
+</kw>
+<status endtime="20190404 14:00:01.316" starttime="20190404 14:00:01.297" status="PASS"></status>
+</kw>
+<kw name="Then I should have ${left} cucumbers">
+<kw library="BuiltIn" name="Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${left}</arg>
+<arg>${z}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.330">${left} = 7</msg>
+<status endtime="20190404 14:00:01.331" starttime="20190404 14:00:01.324" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${start}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.343">12</msg>
+<status endtime="20190404 14:00:01.344" starttime="20190404 14:00:01.332" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${eat}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.347">5</msg>
+<status endtime="20190404 14:00:01.348" starttime="20190404 14:00:01.345" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${left}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.351">7</msg>
+<status endtime="20190404 14:00:01.352" starttime="20190404 14:00:01.349" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Evaluate">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${start} - ${eat}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg level="INFO" timestamp="20190404 14:00:01.358">${result} = 7</msg>
+<status endtime="20190404 14:00:01.359" starttime="20190404 14:00:01.353" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>${left}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.363">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status endtime="20190404 14:00:01.364" starttime="20190404 14:00:01.360" status="PASS"></status>
+</kw>
+<status endtime="20190404 14:00:01.365" starttime="20190404 14:00:01.317" status="PASS"></status>
+</kw>
+<status endtime="20190404 14:00:01.366" starttime="20190404 14:00:01.260" status="PASS"></status>
+</kw>
+<kw name="Scenario Outline: eating cucumbers">
+<arguments>
+<arg>20</arg>
+<arg>5</arg>
+<arg>15</arg>
+</arguments>
+<kw name="Given there are ${start} cucumbers">
+<kw library="BuiltIn" name="Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${start}</arg>
+<arg>${x}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.378">${start} = 20</msg>
+<status endtime="20190404 14:00:01.379" starttime="20190404 14:00:01.375" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${start}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.386">20</msg>
+<status endtime="20190404 14:00:01.389" starttime="20190404 14:00:01.380" status="PASS"></status>
+</kw>
+<status endtime="20190404 14:00:01.391" starttime="20190404 14:00:01.372" status="PASS"></status>
+</kw>
+<kw name="When I eat ${eat} cucumbers">
+<kw library="BuiltIn" name="Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${eat}</arg>
+<arg>${y}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.399">${eat} = 5</msg>
+<status endtime="20190404 14:00:01.400" starttime="20190404 14:00:01.397" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${start}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.403">20</msg>
+<status endtime="20190404 14:00:01.404" starttime="20190404 14:00:01.401" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${eat}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.407">5</msg>
+<status endtime="20190404 14:00:01.408" starttime="20190404 14:00:01.405" status="PASS"></status>
+</kw>
+<status endtime="20190404 14:00:01.408" starttime="20190404 14:00:01.395" status="PASS"></status>
+</kw>
+<kw name="Then I should have ${left} cucumbers">
+<kw library="BuiltIn" name="Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${left}</arg>
+<arg>${z}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.414">${left} = 15</msg>
+<status endtime="20190404 14:00:01.415" starttime="20190404 14:00:01.412" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${start}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.417">20</msg>
+<status endtime="20190404 14:00:01.418" starttime="20190404 14:00:01.416" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${eat}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.421">5</msg>
+<status endtime="20190404 14:00:01.422" starttime="20190404 14:00:01.419" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${left}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.425">15</msg>
+<status endtime="20190404 14:00:01.426" starttime="20190404 14:00:01.423" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Evaluate">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${start} - ${eat}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg level="INFO" timestamp="20190404 14:00:01.431">${result} = 15</msg>
+<status endtime="20190404 14:00:01.431" starttime="20190404 14:00:01.427" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>${left}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.435">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status endtime="20190404 14:00:01.435" starttime="20190404 14:00:01.432" status="PASS"></status>
+</kw>
+<status endtime="20190404 14:00:01.436" starttime="20190404 14:00:01.410" status="PASS"></status>
+</kw>
+<status endtime="20190404 14:00:01.437" starttime="20190404 14:00:01.367" status="PASS"></status>
+</kw>
+<kw name="Scenario Outline: eating cucumbers">
+<arguments>
+<arg>33</arg>
+<arg>11</arg>
+<arg>22</arg>
+</arguments>
+<kw name="Given there are ${start} cucumbers">
+<kw library="BuiltIn" name="Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${start}</arg>
+<arg>${x}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.450">${start} = 33</msg>
+<status endtime="20190404 14:00:01.450" starttime="20190404 14:00:01.447" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${start}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.453">33</msg>
+<status endtime="20190404 14:00:01.454" starttime="20190404 14:00:01.451" status="PASS"></status>
+</kw>
+<status endtime="20190404 14:00:01.455" starttime="20190404 14:00:01.445" status="PASS"></status>
+</kw>
+<kw name="When I eat ${eat} cucumbers">
+<kw library="BuiltIn" name="Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${eat}</arg>
+<arg>${y}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.463">${eat} = 11</msg>
+<status endtime="20190404 14:00:01.464" starttime="20190404 14:00:01.460" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${start}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.467">33</msg>
+<status endtime="20190404 14:00:01.467" starttime="20190404 14:00:01.465" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${eat}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.473">11</msg>
+<status endtime="20190404 14:00:01.474" starttime="20190404 14:00:01.468" status="PASS"></status>
+</kw>
+<status endtime="20190404 14:00:01.476" starttime="20190404 14:00:01.456" status="PASS"></status>
+</kw>
+<kw name="Then I should have ${left} cucumbers">
+<kw library="BuiltIn" name="Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${left}</arg>
+<arg>${z}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.481">${left} = 22</msg>
+<status endtime="20190404 14:00:01.482" starttime="20190404 14:00:01.479" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${start}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.485">33</msg>
+<status endtime="20190404 14:00:01.486" starttime="20190404 14:00:01.483" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${eat}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.488">11</msg>
+<status endtime="20190404 14:00:01.489" starttime="20190404 14:00:01.486" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${left}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.493">22</msg>
+<status endtime="20190404 14:00:01.493" starttime="20190404 14:00:01.490" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Evaluate">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${start} - ${eat}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg level="INFO" timestamp="20190404 14:00:01.499">${result} = 22</msg>
+<status endtime="20190404 14:00:01.500" starttime="20190404 14:00:01.494" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>${left}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.503">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status endtime="20190404 14:00:01.504" starttime="20190404 14:00:01.500" status="PASS"></status>
+</kw>
+<status endtime="20190404 14:00:01.505" starttime="20190404 14:00:01.477" status="PASS"></status>
+</kw>
+<status endtime="20190404 14:00:01.506" starttime="20190404 14:00:01.438" status="PASS"></status>
+</kw>
+<kw name="Scenario Outline: eating cucumbers">
+<arguments>
+<arg>35</arg>
+<arg>15</arg>
+<arg>20</arg>
+</arguments>
+<kw name="Given there are ${start} cucumbers">
+<kw library="BuiltIn" name="Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${start}</arg>
+<arg>${x}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.516">${start} = 35</msg>
+<status endtime="20190404 14:00:01.517" starttime="20190404 14:00:01.514" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${start}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.519">35</msg>
+<status endtime="20190404 14:00:01.520" starttime="20190404 14:00:01.517" status="PASS"></status>
+</kw>
+<status endtime="20190404 14:00:01.521" starttime="20190404 14:00:01.512" status="PASS"></status>
+</kw>
+<kw name="When I eat ${eat} cucumbers">
+<kw library="BuiltIn" name="Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${eat}</arg>
+<arg>${y}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.526">${eat} = 15</msg>
+<status endtime="20190404 14:00:01.527" starttime="20190404 14:00:01.524" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${start}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.530">35</msg>
+<status endtime="20190404 14:00:01.531" starttime="20190404 14:00:01.528" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${eat}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.534">15</msg>
+<status endtime="20190404 14:00:01.535" starttime="20190404 14:00:01.532" status="PASS"></status>
+</kw>
+<status endtime="20190404 14:00:01.536" starttime="20190404 14:00:01.522" status="PASS"></status>
+</kw>
+<kw name="Then I should have ${left} cucumbers">
+<kw library="BuiltIn" name="Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${left}</arg>
+<arg>${z}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.542">${left} = 20</msg>
+<status endtime="20190404 14:00:01.543" starttime="20190404 14:00:01.540" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${start}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.547">35</msg>
+<status endtime="20190404 14:00:01.551" starttime="20190404 14:00:01.544" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${eat}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.553">15</msg>
+<status endtime="20190404 14:00:01.554" starttime="20190404 14:00:01.552" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${left}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.559">20</msg>
+<status endtime="20190404 14:00:01.560" starttime="20190404 14:00:01.555" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Evaluate">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${start} - ${eat}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg level="INFO" timestamp="20190404 14:00:01.567">${result} = 20</msg>
+<status endtime="20190404 14:00:01.567" starttime="20190404 14:00:01.561" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>${left}</arg>
+</arguments>
+<msg level="INFO" timestamp="20190404 14:00:01.571">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status endtime="20190404 14:00:01.572" starttime="20190404 14:00:01.568" status="PASS"></status>
+</kw>
+<status endtime="20190404 14:00:01.572" starttime="20190404 14:00:01.538" status="PASS"></status>
+</kw>
+<status endtime="20190404 14:00:01.573" starttime="20190404 14:00:01.509" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20190404 14:00:01.574" starttime="20190404 14:00:01.257" status="PASS"></status>
+</test>
+<status endtime="20190404 14:00:01.576" starttime="20190404 14:00:01.222" status="PASS"></status>
+</suite>
+<status endtime="20190404 14:00:01.584" starttime="20190404 13:59:28.257" status="FAIL"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="2">Critical Tests</stat>
+<stat pass="3" fail="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="2" name="Acceptance" id="s1">Acceptance</stat>
+<stat pass="1" fail="0" name="Libtest" id="s1-s1">Acceptance.Libtest</stat>
+<stat pass="1" fail="1" name="Mytest" id="s1-s2">Acceptance.Mytest</stat>
+<stat pass="0" fail="1" name="Restful" id="s1-s3">Acceptance.Restful</stat>
+<stat pass="1" fail="0" name="Test" id="s1-s4">Acceptance.Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg level="WARN" timestamp="20190404 13:59:39.564">'=' is deprecated as locator strategy separator. ':' should be used instead</msg>
+<msg level="WARN" timestamp="20190404 13:59:42.211">'=' is deprecated as locator strategy separator. ':' should be used instead</msg>
+<msg level="WARN" timestamp="20190404 13:59:48.881">'=' is deprecated as locator strategy separator. ':' should be used instead</msg>
+<msg level="WARN" timestamp="20190404 13:59:55.016">'=' is deprecated as locator strategy separator. ':' should be used instead</msg>
+<msg level="WARN" timestamp="20190404 13:59:55.126">'=' is deprecated as locator strategy separator. ':' should be used instead</msg>
+<msg level="WARN" timestamp="20190404 13:59:57.912">'=' is deprecated as locator strategy separator. ':' should be used instead</msg>
+<msg level="WARN" timestamp="20190404 13:59:57.913">'=' is deprecated as locator strategy separator. ':' should be used instead</msg>
+<msg level="WARN" timestamp="20190404 13:59:59.961">'=' is deprecated as locator strategy separator. ':' should be used instead</msg>
+</errors>
+</robot>

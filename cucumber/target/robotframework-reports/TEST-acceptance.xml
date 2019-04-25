@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="2" skipped="0" tests="5" name="Acceptance" time="33.327" errors="0">
+<testcase classname="Acceptance.Libtest" name="java Test" time="5.856">
+</testcase>
+<testcase classname="Acceptance.Mytest" name="test1" time="12.057">
+<failure message="Element locator 'class=LC20lb' did not match any elements." type="AssertionError"></failure>
+</testcase>
+<testcase classname="Acceptance.Mytest" name="test2: register with invalid user" time="11.196">
+</testcase>
+<testcase classname="Acceptance.Restful" name="Get Requests" time="1.033">
+<failure message="200 != 400" type="AssertionError"></failure>
+</testcase>
+<testcase classname="Acceptance.Test" name="Scenario: eating cucumbers" time="0.317">
+</testcase>
+</testsuite>
